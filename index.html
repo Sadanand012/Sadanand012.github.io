@@ -4,13 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sadanand</title>
+    <title>Portfolio | Sadanand</title>
+    <!-- style css -->
     <link rel="stylesheet" href="./style_CSS/style.css">
+    <!-- github-calendar -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="https://w7.pngwing.com/pngs/298/520/png-transparent-blackletter-computer-icons-alphabet-letter-s-miscellaneous-text-logo.png" type="image/x-png">
 </head>
 <body>
-    <h1 id="a">Hello world...!</h1>
-    <h2 id="a">Under development....</h2>
-    <div class="left"></div>
-    <div class="right"></div>
+    <!-- <h1 id="a">Hello world...!</h1>
+    <h2 id="a">Under development....</h2> -->
+    <!-- Navbar starts -->
+    <header>
+        <a href="#menu"  class="logo">Sadanand</a>
+        <div id="menu"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Navbar ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h2>Hello, my name is<br /> <span>Sadanand Mare</span></h2>
+            <p>I'm a Backend Developer<span class="typing-text"></span></p>
+            <!-- <a href="#about" class="btn"><span>About Me</span> -->
+                <i class="fas fa-arrow-circle-down"></i>
+            </a>
+            <div class="socials">
+                <ul class="social-icons">
+                    <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/rajesh-biswasa/"
+                            target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a class="github" aria-label="GitHub" href="https://github.com/rajesh-biswasa" target="_blank"><i
+                                class="fab fa-github"></i></a></li>
+                    <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/r_ajeshbiswas"
+                            target="_blank"><i class="fab fa-twitter"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="image">
+            <img draggable="false" class="tilt" src="" alt="image">
+        </div>
+    </section>
+    <!-- home section ends -->
+    <!-- work project section starts -->
+    <section class="work" id="work">
+
+        <h2 class="heading"><i class="fas fa-laptop-code"></i><span> Projects</span> Made </h2>
+        <div class="box-container">
+            <!-- 1st card project -->
+            <div class="box tilt">
+                <div class="tag">
+                    <h3>Portfolio Website</h3>
+                </div>
+                <div class="img-desc">
+                    <img draggable="false" src="./Assets/best Buys.png" alt="" />
+
+                    <div class="bullet-point">
+                        <h3>Description</h3>
+                        <p>Cloned Air ship website within 6 days along with 5 aspiring developers.
+                        </p>
+                        <p>Best Buy is a US-based e-commerce electronics retailer.
+                        </p>
+                        <p>My responsibility was to build Header and Homepage with respective functionalities.</p>
+                        <div class="btns">
+                            <a href="https://bestbuy-in.netlify.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                            <a href="https://github.com/mayurisamanta/Best-Buyers" class="btn" target="_blank">Code
+                                <i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+                    
+                <!--     <div class="desc">
+                        <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here
+                            only!</p>
+                        
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="calendar">
+            <!-- Loading stuff -->
+            <!-- Loading the data just for you. -->
+        </div>
+    </section>
+    
 </body>
 </html>
+<script src="./js/script.js"></script>
+<script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
