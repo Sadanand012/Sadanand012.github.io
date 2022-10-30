@@ -8,18 +8,6 @@
 // });
 // <!-- typed js effect ends -->
 
-// GitHubCalendar(".calendar", "Sadanand012");
-
-//     // or enable responsive functionality:
-//     GitHubCalendar(".calendar", "Sadanand012", { responsive: true });
-
-//     // Use a proxy
-//     GitHubCalendar(".calendar", "Sadanand012", {
-//        proxy (Sadanand012) {
-//          return fetch(`https://your-proxy.com/github?user=${Sadanand012}`)
-//        }
-//     }).then(r => r.text())
-
 window.onload = function(){
     GitHubCalendar(".calendar", "Sadanand012");
 
