@@ -12,10 +12,6 @@
         "icon": "https://img.icons8.com/color/48/000000/spring-logo.png"
     },
     {
-        "name": "Hibernate",
-        "icon": "./image/hibernate.png"
-    },
-    {
         "name": "HTML5",
         "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
     },
@@ -26,10 +22,6 @@
     {
         "name": "JavaScript",
         "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
-    },
-    {
-        "name": "jQuery",
-        "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
     },
     {
         "name": "Netlify",

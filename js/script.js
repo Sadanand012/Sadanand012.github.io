@@ -22,6 +22,16 @@ window.onload = function(){
     }).then(r => r.text())
 }
 
+async function fetchData(type = "skills") {
+  let response
+  type === "skills" ?
+      response = await fetch("./json file/skills.json")
+      :
+      response = await fetch("./json file/projects.json")
+  const data = await response.json();
+  return data;
+}
+
 function showSkills(skills) {
   let skillsContainer = document.getElementById("skillsContainer");
   let skillHTML = "";
@@ -36,3 +46,7 @@ function showSkills(skills) {
   });
   skillsContainer.innerHTML = skillHTML;
 }
+
+fetchData().then(data => {
+    showSkills(data);
+});
