@@ -84,20 +84,73 @@ header .navbar ul li a:hover {
     display: none;
 } */
 /* navbar ends */
+@media (max-width: 768px) {
+    #menu {
+      display: block;
+    }
+  
+    header .navbar {
+      position: fixed;
+      top: 6.5rem;
+      right: -120%;
+      width: 75%;
+      height: 100%;
+      text-align: left;
+      align-items: flex-start;
+      background-color: #0e0f31;
+    }
+  
+    header .navbar ul {
+      flex-flow: column;
+      padding: 1rem;
+    }
+  
+    header .navbar ul li {
+      text-align: center;
+      width: 100%;
+      margin: 1rem 0;
+      border-radius: 0.5rem;
+      width: 26rem;
+    }
+  
+    header .navbar ul li a {
+      display: block;
+      padding: 1rem;
+      text-align: left;
+      color: #fff;
+      font-size: 2rem;
+    }
+  
+    header .navbar ul li a.active,
+    header .navbar ul li a:hover {
+      padding: 1rem;
+      color: #fff;
+      border-radius: 0.5rem;
+      border-bottom: 0.5rem solid #011aff;
+    }
+  
+    .fa-times {
+      transform: rotate(180deg);
+    }
+  
+    header .navbar.nav-toggle {
+      right: 0;
+    }
+  }
 /* hero section starts*/
 .home {
     background: #e5ecfb;
 }
 
 .home {
-    position: static;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    min-height: 125vh;
+    min-height: 100vh;
     align-items: center;
-    margin-top: -30px;
-    margin-bottom: -100px;
+    /* margin-top: -30px; */
+    /* margin-bottom: -100px; */
 }
 
 .home::before {
@@ -122,7 +175,7 @@ header .navbar ul li a:hover {
 
 .home .image img {
     width: 20%;
-    margin-left: 52rem;
+    margin-left: 50rem;
     /* margin-top: -10rem; */
     border-radius: 20% 20% 20% 20%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -168,7 +221,6 @@ header .navbar ul li a:hover {
     position: relative;
     width: 15rem;
     line-height: 0;
-    text-decoration: none;
     padding: 1.6rem 3rem;
     border-radius: 4em;
     transition: 0.5s;
@@ -263,6 +315,11 @@ header .navbar ul li a:hover {
     background-color: #007bb6;
 }
 
+.hero_project{
+    width: 150px;
+    height: 50px;
+    display: flex;
+}
 /* social icons end */
 
 /* hero media queries starts*/
