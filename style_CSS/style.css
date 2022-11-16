@@ -83,6 +83,16 @@ header .navbar ul li a:hover {
     color: rgb(24, 2, 63);
     display: none;
 } */
+@media screen and (max-width: 600px) {
+    header {
+        
+        
+        display: grid;
+        align-items: left;
+        justify-content: space-around;
+    }
+  
+  }
 /* navbar ends */
 @media (max-width: 768px) {
     #menu {
