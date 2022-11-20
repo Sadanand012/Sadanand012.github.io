@@ -104,6 +104,12 @@ header .navbar ul li a:hover {
         font-weight: 600;
         /* color: #ff7b00; */
     }
+    .home {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        /* margin-top: -10rem; */
+    }
   }
 /* navbar ends */
 @media (max-width: 768px) {
