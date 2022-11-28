@@ -69,13 +69,16 @@ header .navbar ul li a {
     letter-spacing: 0.04rem;
     transition: 0.2s;
 }
-#resume1{
+
+#resume1 {
     border-radius: 5px;
     padding: 5px 8px;
 }
-#resume1 a{
+
+#resume1 a {
     color: #ee6c4d;
 }
+
 /* header .navbar ul li a.active, */
 header .navbar ul li a:hover {
     color: #fc8c05;
@@ -89,13 +92,13 @@ header .navbar ul li a:hover {
     color: rgb(24, 2, 63);
     display: none;
 } */
-#menu-icon{
+#menu-icon {
     margin: auto 0;
     display: none;
     cursor: pointer;
 }
 
-#menu-icon div{
+#menu-icon div {
     width: 35px;
     height: 3px;
     background-color: #0e2431;
@@ -103,25 +106,28 @@ header .navbar ul li a:hover {
     transition: 0.4s;
 }
 
-.open .bar1{
+.open .bar1 {
     -webkit-transform: rotate(-0deg) translate(-6px, 6px);
     transform: rotate(-45deg) translate(-6px, 6px);
 }
 
-.open .bar2{
+.open .bar2 {
     opacity: 0;
 }
-.open .bar3{
+
+.open .bar3 {
     -webkit-transform: rotate(45deg) translate(-6px, -8px);
     transform: rotate(45deg) translate(-6px, -8px);
 }
-.open .mobile-menu{
+
+.open .mobile-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start
 }
-.mobile-menu{
+
+.mobile-menu {
     display: none;
     position: absolute;
     top: 50px;
@@ -129,16 +135,18 @@ header .navbar ul li a:hover {
     height: calc(100vh - 50px);
     width: 100%;
 }
-@media only screen and (max-width:600px){
-    header .navbar{
+
+@media only screen and (max-width:600px) {
+    header .navbar {
         display: none;
 
     }
-    
-    #menu-icon{
+
+    #menu-icon {
         display: block;
     }
 }
+
 /* hero section starts*/
 .home {
     background: #e5ecfb;
@@ -231,11 +239,13 @@ header .navbar ul li a:hover {
     box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
     font-family: "Nunito", sans-serif;
 }
-.home .btn:hover{
+
+.home .btn:hover {
     cursor: pointer;
     color: #ee6c4d;
     background-color: #fff;
 }
+
 .home .btn span {
     font-weight: 700;
     font-size: 1.7rem;
@@ -317,11 +327,12 @@ header .navbar ul li a:hover {
     background-color: #007bb6;
 }
 
-.hero_project{
+.hero_project {
     width: 150px;
     height: 50px;
     display: flex;
 }
+
 /* social icons end */
 
 
@@ -890,86 +901,89 @@ header .navbar ul li a:hover {
       transform: scale(1.1);
     }
   } */
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     header {
         display: grid;
         align-items: left;
         justify-content: space-around;
         max-width: 600px;
     }
-  
-    .home> .content{
+
+    .home>.content {
         padding-top: 130px;
     }
+
     .home .content h2 {
         font-size: 1rem;
         font-weight: 600;
     }
-    
+
     .home .content h2 span {
         font-size: 2rem;
         font-weight: 600;
         /* color: #ff7b00; */
     }
+
     .home {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
         /* margin-top: -10rem; */
     }
-  }
+}
+
 /* navbar ends */
 @media (max-width: 768px) {
     #menu {
-      display: block;
+        display: block;
     }
-  
+
     header .navbar {
-      position: fixed;
-      top: 6.5rem;
-      right: -120%;
-      width: 75%;
-      height: 100%;
-      text-align: left;
-      align-items: flex-start;
-      background-color: #0e0f31;
+        position: fixed;
+        top: 6.5rem;
+        right: -120%;
+        width: 75%;
+        height: 100%;
+        text-align: left;
+        align-items: flex-start;
+        background-color: #0e0f31;
     }
-  
+
     header .navbar ul {
-      flex-flow: column;
-      padding: 1rem;
+        flex-flow: column;
+        padding: 1rem;
     }
-  
+
     header .navbar ul li {
-      text-align: center;
-      width: 100%;
-      margin: 1rem 0;
-      border-radius: 0.5rem;
-      width: 26rem;
+        text-align: center;
+        width: 100%;
+        margin: 1rem 0;
+        border-radius: 0.5rem;
+        width: 26rem;
     }
-  
+
     header .navbar ul li a {
-      display: block;
-      padding: 1rem;
-      text-align: left;
-      color: #fff;
-      font-size: 2rem;
+        display: block;
+        padding: 1rem;
+        text-align: left;
+        color: #fff;
+        font-size: 2rem;
     }
-  
+
     header .navbar ul li a.active,
     header .navbar ul li a:hover {
-      padding: 1rem;
-      color: #fff;
-      border-radius: 0.5rem;
-      border-bottom: 0.5rem solid #011aff;
+        padding: 1rem;
+        color: #fff;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #011aff;
     }
-  
+
     .fa-times {
-      transform: rotate(180deg);
+        transform: rotate(180deg);
     }
-  
+
     header .navbar.nav-toggle {
-      right: 0;
+        right: 0;
     }
 }
 
