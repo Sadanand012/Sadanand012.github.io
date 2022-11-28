@@ -22,12 +22,8 @@
 </head>
 
 <body>
-    <!-- <h1 id="a">Hello world...!</h1>
-    <h2 id="a">Under development....</h2> -->
-    <!-- Navbar starts -->
     <header>
-        <a href="#menu" class="logo">S.M.</a>
-        <div id="menu"></div>
+        <div id="menu"><a href="#menu" class="logo">S.M.</a></div>
         <nav class="navbar">
             <ul>
                 <li><a class="active" href="#home">HOME</a></li>
@@ -35,9 +31,22 @@
                 <li><a href="#work">WORK</a></li>
                 <li><a href="#skills">SKILLS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <li><a href="https://drive.google.com/uc?export=download&id=1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh">RESUME</a></li>
+                <li id="resume1"><a href="https://drive.google.com/uc?export=download&id=1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh">RESUME</a></li>
             </ul>
         </nav>
+        <div id="menu-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a class="active" href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li id="resume1"><a href="https://drive.google.com/uc?export=download&id=1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh">RESUME</a></li>
+            </ul>
+        </div>
     </header>
     <!-- Navbar ends -->
 

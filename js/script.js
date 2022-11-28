@@ -22,6 +22,10 @@
 //     }).then(r => r.text())
 // }
 
+function toggleMobileMenu(menu){
+  menu.classList.toggle('open');
+} 
+
 async function fetchData(type = "skills") {
   let response
   type === "skills" ?
