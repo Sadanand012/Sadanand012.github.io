@@ -150,10 +150,11 @@ header .navbar ul li a:hover {
 /* hero section starts*/
 .home {
     background: #e5ecfb;
+    background: #85bcfa;
 }
 
 .home {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -172,11 +173,6 @@ header .navbar ul li a:hover {
     width: 100%;
 }
 
-.home .content {
-    flex: 1 1 40rem;
-    /* padding-top: 1rem; */
-    z-index: 1;
-}
 
 .home .image {
     flex: 1 1 40rem;
@@ -1004,6 +1000,10 @@ header .navbar ul li a:hover {
 /* footer section ends */
 /* hero media queries starts*/
 @media (max-width: 450px) {
+    .home{
+        display: grid;
+        grid-template-columns: repeat(1fr, 1);
+    }
     .home .btn {
         margin: 4rem 0;
     }
