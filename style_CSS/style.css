@@ -899,7 +899,7 @@ header .navbar ul li a:hover {
   } */
 @media screen and (max-width: 600px) {
     header {
-        display: grid;
+        display: flex;
         align-items: left;
         justify-content: space-around;
         max-width: 600px;
