@@ -42,7 +42,7 @@ header {
 }
 
 section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 2rem 9%;
 }
 
@@ -139,11 +139,17 @@ header .navbar ul li a:hover {
 @media only screen and (max-width:600px) {
     header .navbar {
         display: none;
-
     }
 
     #menu-icon {
         display: block;
+    }
+
+    #menu-icon .mobile-menu {
+        margin-top: 10px;
+        border-radius: 3px solid red;
+        background-color: white;
+        height: 140px;
     }
 }
 
@@ -157,32 +163,37 @@ header .navbar ul li a:hover {
     /* position: relative; */
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
     min-height: 100vh;
+    width: auto;
+    margin: auto;
+    gap: 1.5rem;
     align-items: center;
     /* margin-top: -30px; */
     /* margin-bottom: -100px; */
 }
 
-.home::before {
+/* .home::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-}
+} */
 
 
-.home .image {
+/* .home .image {
     flex: 1 1 40rem;
     z-index: 1;
+} */
+.image_social {
+    display: flex;
 }
 
 .home .image img {
     width: 20%;
     margin-left: 50rem;
-    /* margin-top: -10rem; */
+    margin-top: -10rem;
     border-radius: 20% 20% 20% 20%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
@@ -303,21 +314,6 @@ header .navbar ul li a:hover {
     margin: 6px 10px;
     margin-left: 30px;
 }
-
-/* .social-icons a:active,
-.social-icons a:focus,
-.social-icons a:hover {
-    color: #fff;
-    background-color: #0685da;
-} */
-
-/* .social-icons a .github:hover {
-    background-color: #00aced;;
-} */
-/* 
-.social-icons a .twitter:hover {
-    background-color: #00aced;
-} */
 
 .social-icons a .linkedin:hover {
     background-color: #007bb6;
@@ -901,12 +897,12 @@ header .navbar ul li a:hover {
     header {
         display: flex;
         align-items: left;
-        justify-content: space-around;
+        justify-content: space-between;
         max-width: 600px;
     }
 
     .home>.content {
-        padding-top: 130px;
+        padding-top: 100px;
     }
 
     .home .content h2 {
@@ -920,11 +916,13 @@ header .navbar ul li a:hover {
         /* color: #ff7b00; */
     }
 
-    .home {
+    .image_social {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        /* margin-top: -10rem; */
+    }
+
+    .home .image img {
+        margin: 0px;
+        visibility: hidden;
     }
 }
 
@@ -1000,10 +998,11 @@ header .navbar ul li a:hover {
 /* footer section ends */
 /* hero media queries starts*/
 @media (max-width: 450px) {
-    .home{
+    .home {
         display: grid;
         grid-template-columns: repeat(1fr, 1);
     }
+
     .home .btn {
         margin: 4rem 0;
     }
