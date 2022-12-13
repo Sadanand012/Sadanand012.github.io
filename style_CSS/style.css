@@ -523,7 +523,7 @@ header .navbar ul li a:hover {
 }
 
 .about .row .image img {
-    margin: 4rem;
+    margin: 40px;
     width: 20rem;
     height: auto;
     border-radius: 5%;
@@ -552,14 +552,15 @@ header .navbar ul li a:hover {
 
 .about .row p {
     font-size: 1.5rem;
-    margin-top: 5.5rem;
+    margin-top: 3rem;
     font-family: "Nunito";
     font-weight: 600;
     text-transform: none;
 }
 
 .resumebtn {
-    margin-top: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 30px;
 }
 
 .resumebtn .btn {
@@ -586,10 +587,7 @@ header .navbar ul li a:hover {
 }
 
 .resumebtn .btn:hover {
-    /* background: #1a047e; */
-    /* background:#ee6c4d; */
     background-color: #e5ecfb;
-    /* opacity: 0.2; */
     color: #020133;
 }
 
@@ -610,13 +608,13 @@ header .navbar ul li a:hover {
     }
 
     .about .row {
-        padding: 0.5rem;
+        padding: 0.1rem;
         margin-bottom: 7rem;
     }
 
-    .about .row .content {
+    /* .about .row .content {
         padding: 1rem;
-    }
+    } */
 
     .about .row .content .box-container {
         gap: 0;
@@ -980,6 +978,17 @@ header .navbar ul li a:hover {
     header .navbar.nav-toggle {
         right: 0;
     }
+    .about .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 4rem;
+    }
+
+    .img-desc {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1022,6 +1031,33 @@ header .navbar ul li a:hover {
 
     .home .content p span {
         font-size: 2.2rem;
+    }
+    .about .row {
+        flex-wrap: wrap;
+    }
+
+    .about .row p {
+        font-size: 20px;
+        margin-top: 1rem;
+        font-weight: 400;
+    }
+    .resumebtn .btn {
+        padding: 1rem 0.5rem;
+    }
+
+    .btns{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    .btns .btn {
+        font-size: 1rem;
+        margin-right: -1rem;
+    }
+    
+    section {
+        /* min-height: 100vh; */
+        padding: 0.8rem;
     }
 }
 
