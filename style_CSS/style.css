@@ -36,7 +36,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1.7rem 10%;
-    height: 5rem;
+    /* height: 5rem; */
     background-color: #fff;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
@@ -415,8 +415,8 @@ header .navbar ul li a:hover {
     font-size: 1.3rem;
   } */
 .btns {
-    /* display: flex;
-    justify-content: space-between; */
+    display: flex;
+    /* justify-content: space-between; */
     width: 100%;
     margin: 2rem;
 }
@@ -633,7 +633,7 @@ header .navbar ul li a:hover {
 
 /* skills section starts */
 .skills {
-    min-height: 90vh;
+    /* min-height: 90vh; */
     /* background: linear-gradient(to bottom, #57059e, #4a00e0); */
     background: rgb(255, 255, 255);
 }
@@ -649,7 +649,7 @@ header .navbar ul li a:hover {
     color: #ee6c4d
 }
 
-.skills .container {
+.skills .container_skill {
     background: #f7f7f7;
     /* background: rgba(0, 0, 22, 0.4); */
     border-radius: 1rem;
@@ -659,30 +659,29 @@ header .navbar ul li a:hover {
     margin-top: 2rem;
 }
 
-.skills .container .row {
+.skills .container_skill .row {
+    width: 80%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     flex-wrap: wrap;
     gap: 1.8rem;
 }
 
-.skills .container .bar {
+.skills .container_skill .bar {
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    /* background: rgba(0, 0, 22, 0.9); */
-    /* background: rgba(213, 213, 218, 0.9); */
     transition: 0.2s;
     background: #e5ecfb;
 }
 
-.skills .container .bar:hover {
+.skills .container_skill .bar:hover {
     box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
     background: rgb(255, 255, 255) !important;
 }
 
-.skills .container .bar .info {
+.skills .container_skill .bar .info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -690,11 +689,11 @@ header .navbar ul li a:hover {
     margin-top: 1rem;
 }
 
-.skills .container .bar .info i {
+.skills .container_skill .bar .info i {
     font-size: 4rem;
 }
 
-.skills .container .bar .info span {
+.skills .container_skill .bar .info span {
     font-size: 2rem;
     font-weight: 500;
     font-family: "Poppins";
@@ -703,19 +702,15 @@ header .navbar ul li a:hover {
 
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
-    .skills .container {
-        padding: 0;
-        margin: 0;
-    }
 
-    .skills .container .row {
+    .skills .container_skill .row {
         grid-template-columns: repeat(2, 1fr);
         margin: 1rem;
         padding: 2rem 0.2rem 2rem 0.2rem;
         gap: 1rem;
     }
 
-    .skills .container {
+    .skills .container_skill {
         margin-top: 5px;
         width: 100%;
     }
@@ -925,6 +920,13 @@ header .navbar ul li a:hover {
     }
 }
 
+@media (max-width: 1000px){
+
+    .home .image img {
+        margin-left: 35rem;
+    }
+}
+
 /* navbar ends */
 @media (max-width: 768px) {
     #menu {
@@ -988,6 +990,11 @@ header .navbar ul li a:hover {
     .img-desc {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .home .image img {
+        width: 150px;
+        margin-left: 26rem;
     }
 }
 
