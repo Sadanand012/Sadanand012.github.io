@@ -147,7 +147,6 @@ header .navbar ul li a:hover {
 
     #menu-icon .mobile-menu {
         margin-top: 10px;
-        border-radius: 3px solid red;
         background-color: white;
         height: 140px;
     }
@@ -182,10 +181,7 @@ header .navbar ul li a:hover {
 } */
 
 
-/* .home .image {
-    flex: 1 1 40rem;
-    z-index: 1;
-} */
+
 .image_social {
     display: flex;
 }
@@ -358,7 +354,6 @@ header .navbar ul li a:hover {
     flex: 1 1 45rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 2, 68, 0.8);
-    /* box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important; */
     position: relative;
     overflow: hidden;
     height: 30rem;
