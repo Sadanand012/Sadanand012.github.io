@@ -34,5 +34,18 @@
     {
         "name": "VS",
         "icon": "https://img.icons8.com/color/48/000000/visual-studio.png"
+    },
+
+    {
+        "name": "jQuery",
+        "icon": "https://img.icons8.com/ios-filled/48/1169ae/jquery.png"
+    },
+    {
+        "name":"Hibernate",
+        "icon":".//Assets/hibernate.png"
+    },
+    {
+        "name":"meven",
+        "icon":"https://skillicons.dev/icons?i=maven"
     }
 ]

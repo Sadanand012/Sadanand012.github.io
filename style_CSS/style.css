@@ -9,6 +9,7 @@
     border: none;
     outline: none;
     transition: all 0.2s linear;
+    width: auto;
 }
 
 
@@ -39,11 +40,14 @@ header {
     /* height: 5rem; */
     background-color: #fff;
     box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+    width: auto;
 }
 
 section {
     /* min-height: 100vh; */
     padding: 2rem 9%;
+    width: auto;
+    background-color: red;
 }
 
 header .logo:hover {
@@ -52,6 +56,7 @@ header .logo:hover {
 
 header .navbar ul {
     list-style: none;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -104,6 +109,7 @@ header .navbar ul li a:hover {
     background-color: #0e2431;
     margin: 6px 0;
     transition: 0.4s;
+    margin-right: 100px;
 }
 
 .open .bar1 {
@@ -136,13 +142,28 @@ header .navbar ul li a:hover {
     width: 100%;
 }
 
-@media only screen and (max-width:750px) {
-    header .navbar {
-        display: none;
+@media only screen and (max-width:900px) {
+    .header{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 
+    .heading{
+        margin-top: 100px;
+    }
+    header .navbar {
+        display: none;
+        
+    }
+
+    #menu{
+        /* margin: 20px; */
+        margin-right: 60px;
+    }
     #menu-icon {
         display: block;
+        margin-left: 60px;
     }
 
     #menu-icon .mobile-menu {
@@ -163,11 +184,11 @@ header .navbar ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
-    width: auto;
+    width: 100%;
     margin: auto;
     gap: 1.5rem;
     align-items: center;
-    /* margin-top: -30px; */
+    margin-top: 30px;
     /* margin-bottom: -100px; */
 }
 
@@ -180,6 +201,13 @@ header .navbar ul li a:hover {
     width: 100%;
 } */
 
+.content {
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
 
 
 .image_social {
@@ -188,7 +216,7 @@ header .navbar ul li a:hover {
 
 .home .image img {
     width: 20%;
-    margin-left: 50rem;
+    margin-left: 45rem;
     margin-top: -10rem;
     border-radius: 20% 20% 20% 20%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -267,19 +295,19 @@ header .navbar ul li a:hover {
     margin-top: 9rem;
 }
 
-.socials .social-icons {
+.socials .social_icons {
     padding-left: 0;
     margin-bottom: 0;
     margin-top: -100px;
     list-style: none;
 }
 
-.socials .social-icons li {
+.socials .social_icons li {
     display: inline-block;
     margin-bottom: 14px;
 }
 
-.social-icons a {
+.social_icons a {
     font-size: 2rem;
     display: inline-block;
     line-height: 44px;
@@ -311,7 +339,7 @@ header .navbar ul li a:hover {
     margin-left: 30px;
 }
 
-.social-icons a .linkedin:hover {
+.social_icons a .linkedin:hover {
     background-color: #007bb6;
 }
 
@@ -366,13 +394,7 @@ header .navbar ul li a:hover {
     object-fit: contain;
 }
 
-.content {
-    /* height: 100%; */
-    width: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .tag {
     margin: 30px 0px -30px 30px;
@@ -911,7 +933,7 @@ header .navbar ul li a:hover {
 
     .home .image img {
         margin: 0px;
-        visibility: hidden;
+        /* visibility: hidden; */
     }
 }
 
@@ -919,6 +941,15 @@ header .navbar ul li a:hover {
 
     .home .image img {
         margin-left: 35rem;
+    }
+    .skills .container_skill .row {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: -30px;
+    }
+    .img-desc {
+        display: grid;
     }
 }
 
@@ -987,10 +1018,15 @@ header .navbar ul li a:hover {
         flex-wrap: wrap;
     }
 
+    /* .image_social{
+        display: flex;
+
+    } */
     .home .image img {
         width: 150px;
         margin-left: 26rem;
     }
+    
 }
 
 @media (max-width: 450px) {
@@ -1013,6 +1049,8 @@ header .navbar ul li a:hover {
     .home {
         display: grid;
         grid-template-columns: repeat(1fr, 1);
+        margin: 0;
+        width: 100%;
     }
 
     .home .btn {
@@ -1060,6 +1098,10 @@ header .navbar ul li a:hover {
     section {
         /* min-height: 100vh; */
         padding: 0.8rem;
+    }
+    .skills .container_skill .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
