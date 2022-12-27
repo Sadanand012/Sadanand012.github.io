@@ -20,6 +20,12 @@ header .logo {
     color: #0e2431;
 }
 
+header .logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #0e2431;
+}
 #favicon {
     width: 10px;
     background-color: white;
