@@ -20,12 +20,6 @@ header .logo {
     color: #0e2431;
 }
 
-header .logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    text-decoration: none;
-    color: #0e2431;
-}
 #favicon {
     width: 10px;
     background-color: white;
@@ -439,8 +433,8 @@ header .navbar ul li a:hover {
   } */
 .btns {
     display: flex;
-    /* justify-content: space-between; */
     width: 100%;
+    height: 50px;
     margin: 2rem;
 }
 
@@ -656,8 +650,6 @@ header .navbar ul li a:hover {
 
 /* skills section starts */
 .skills {
-    /* min-height: 90vh; */
-    /* background: linear-gradient(to bottom, #57059e, #4a00e0); */
     background: rgb(255, 255, 255);
 }
 
@@ -760,9 +752,9 @@ header .navbar ul li a:hover {
     margin-bottom: 2.5rem;
 }
 
-/* .stat .calendar {
+.stat .calendar {
     box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8);
-  } */
+  }
 
 .stat .github_stat {
     /* display: flex; 
@@ -1044,6 +1036,10 @@ header .navbar ul li a:hover {
         padding: 0.7rem;
     }
 
+    .footer .box-container_footer .box_footer .share {
+        display: flex;
+        width: 300px;
+    }
     .footer .box-container_footer .box_footer .share a {
         padding: 1.2rem;
     }
