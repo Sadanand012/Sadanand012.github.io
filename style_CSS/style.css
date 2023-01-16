@@ -752,9 +752,9 @@ header .navbar ul li a:hover {
     margin-bottom: 2.5rem;
 }
 
-.stat .calendar {
+/* .stat .calendar {
     box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8);
-  }
+  } */
 
 .stat .github_stat {
     /* display: flex; 
