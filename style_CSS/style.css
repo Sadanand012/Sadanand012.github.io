@@ -69,6 +69,7 @@ header .navbar li {
 header .navbar ul li a {
     font-size: 1.2rem;
     color: #0e2431;
+    list-style: none; 
     font-weight: 600;
     text-decoration: none;
     letter-spacing: 0.04rem;
@@ -89,6 +90,7 @@ header .navbar ul li a:hover {
     color: #fc8c05;
     border-bottom: 0.2rem solid #fc8c05;
     padding: 0.5rem 0;
+    list-style: none;
 }
 
 /* #menu {
