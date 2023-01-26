@@ -131,15 +131,16 @@ header .navbar ul li a:hover {
 .open .mobile-menu {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start
+    /* align-items: center; */
+    /* justify-content: right; */
 }
 
 .mobile-menu {
     display: none;
     position: absolute;
+    list-style: none;
     top: 50px;
-    left: 0;
+    /* left: 0; */
     height: calc(100vh - 50px);
     width: 100%;
 }
@@ -172,6 +173,9 @@ header .navbar ul li a:hover {
         margin-top: 10px;
         background-color: white;
         height: 140px;
+        /* width: 80%; */
+        right: 0;
+        width: 100%;
     }
 }
 
@@ -1106,6 +1110,11 @@ header .navbar ul li a:hover {
     .skills .container_skill .row {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    #menu-icon .mobile-menu {
+        margin-top: 10px;
+        right: 0;
+        width: 100%;
     }
 }
 
