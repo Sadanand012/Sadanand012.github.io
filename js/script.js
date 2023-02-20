@@ -37,3 +37,8 @@ document.getElementById("resume1").onclick = function() {newWindowResum()};
 function newWindowResum(){
   window.open("https://drive.google.com/file/d/1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh/view");
 }
+document.getElementById("resume2").onclick = function() {newWindowResum()};
+
+function newWindowResum(){
+  window.open("https://drive.google.com/file/d/1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh/view");
+}

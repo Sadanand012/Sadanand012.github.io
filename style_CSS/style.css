@@ -769,7 +769,7 @@ header .navbar ul li a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
-    width: 85%;
+    width: 80%;
     gap: 10px;
     margin-bottom: 2rem;
 }
