@@ -21,16 +21,16 @@
 
 <body>
     <!-- Navbar ends -->
-    <header class="header">
+    <header class="header" id="nav-menu">
         <div id="menu"><a href="#menu" class="logo">Sadanand</a></div>
         <nav class="navbar">
             <ul>
-                <li><a class="active" href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#work">PROJECTS</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li id="resume1"><a
+                <li><a class="active nav-link home" href="#home">HOME</a></li>
+                <li><a href="#about" class="nav-link about">ABOUT</a></li>
+                <li><a href="#work" class="nav-link projects">PROJECTS</a></li>
+                <li><a href="#skills" class="nav-link skills">SKILLS</a></li>
+                <li><a href="#contact" class="nav-link contact">CONTACT</a></li>
+                <li id="resume-button-1" class="nav-link resume"><a
                         href="https://drive.google.com/uc?export=download&id=1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh">RESUME</a>
                 </li>
             </ul>
@@ -40,66 +40,32 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
             <ul class="mobile-menu">
-                <li><a class="active" href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#work">PROJECTS</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li id="resume1"><a
+                <li><a class="active nav-link home" href="#home">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#work" class="nav-link projects">PROJECTS</a></li>
+                <li><a href="#skills" class="nav-link skills">SKILLS</a></li>
+                <li><a href="#contact" class="nav-link contact">CONTACT</a></li>
+                <li id="resume-button-1" class="nav-link resume"><a
                         href="https://drive.google.com/uc?export=download&id=1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh">RESUME</a>
                 </li>
             </ul>
         </div>
     </header>
     <!-- Navbar ends -->
-
-    <!-- home section starts -->
-    <!-- <section class="home" id="home">
-
-        <div class="content">
-            <h2>Hello<br /> <span>Sadanand Mare</span></h2>
-            <p>I'm a Java Backend Developer<span class="typing-text"></span></p>
-            <a href="#about" class="btn"><span>About Me</span>
-            </a>
-            <div class="image_social">
-                <div class="socials">
-                    <ul class="social_icons">
-                        <li><a class="linkedin" aria-label="LinkedIn"
-                                href="https://www.linkedin.com/in/sadanand-mare-a8396a223/" target="_blank"><img
-                                    src="https://blog.waalaxy.com/wp-content/uploads/2021/01/LinkedIn-Symbole.png" /></a>
-                        </li>
-                        <li><a class="github" aria-label="GitHub" href="https://github.com/Sadanand012"
-                                target="_blank"><img src="./Assets/github logo.png" /></a></li>
-                        <li><a class="resume" aria-label="GitHub"
-                                href="https://drive.google.com/file/d/1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh/view?usp=sharing"
-                                target="_blank"><img
-                                    src="https://thumbs.dreamstime.com/b/resume-icon-vector-job-application-cv-sign-graphic-design-logo-web-site-social-media-mobile-app-ui-illustration-resume-icon-215388315.jpg" /></a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="image">
-                    <img draggable="false" class="tilt" src="./Assets/sadanand.jpg" alt="image">
-                </div>
-            </div>
-        </div>
-
-    </section> -->
-    <!-- home section ends -->
     <!-- about section starts -->
-    <section class="about" id="about">
+    <section class="about section" id="about">
         <h2 class="heading"> About <span>Me</span></h2>
 
 
         <div class="row">
 
             <div class="image">
-                <img draggable="false" class="tilt" src="./Assets/sadanand.jpg" alt="">
+                <img draggable="false" class="title home-img" src="./Assets/sadanand.jpg" alt="">
             </div>
-            <div>
-                <p style="text-align: center; font-size: 23px; color: #ee6c4d; font-weight: bolder; margin: 60px;">
+            <div id="user-detail-intro">
+                <p class="logo_name">
                     Sadanand Mare here</p>
-                <p style="text-align: center; font-size: 23px; color: #002057; font-weight: bold; margin: 0px;">I'm a
+                <p class="logo_name1" >I'm a
                     Java Backend Developer</p>
                 <p>Skilled Java Backend Developer with
                     proficiency in Java. Problem
@@ -110,9 +76,10 @@
                     for a challenging role in the
                     industry to utilize my skill and
                     learning. </p>
-                <div class="resumebtn" >
-                    <a id="resume2" href="https://drive.google.com/uc?id=1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh&export=download" 
-                        class="btn"  ><span  >Resume</span>
+                <div class="resumebtn">
+                    <a id="resume-link-1"
+                        href="https://drive.google.com/uc?id=1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh&export=download"
+                        class="btn"><span>Resume</span>
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </div>
@@ -120,19 +87,19 @@
         </div>
     </section>
     <!-- about section ends -->
-    <!-- work project section starts -->
-    <section class="work" id="work">
+        <!-- work project section starts -->
+    <section class="project-card"id="work"  id="projects">
 
         <h2 class="heading"><span> Projects</span> Made </h2>
         <div class="box-container">
-            <div class="box tilt">
-                <div class="tag">
+            <div class="title">
+                <div class="project-title">
                     <h3>Best Buy</h3>
                 </div>
                 <div class="img-desc">
                     <img draggable="false" src="./Assets/best Buys.png" alt="" />
 
-                    <div class="bullet-point">
+                    <div class="bullet-point project-description">
                         <h3>Description</h3>
                         <p>&#8226; Best Buy is a US-based e-commerce electronics retailer.
                         </p>
@@ -141,44 +108,33 @@
 
                         <p>&#8226; My responsibility was to build cart page with respective functionalities.</p>
                         <br>
-                        <p>Tech Stack:-
+                        <p class="project-tech-stack">Tech Stack:-
                             <span class="hero_project"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png"
                                     alt="HTML"> <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
                                 <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt=""> <img
                                     src="https://img.icons8.com/color/48/000000/visual-studio.png" alt=""></span>
                         </p>
                         <div class="btns">
-                            <a href="https://bestbuy-in.netlify.app/" class="btn" target="_blank"><i
+                            <a href="https://bestbuy-in.netlify.app/" class="btn project-deployed-link" target="_blank"><i
                                     class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/mayurisamanta/Best-Buyers" class="btn" target="_blank">Code
+                            <a href="https://github.com/mayurisamanta/Best-Buyers" class="btn project-github-link" target="_blank">Code
                                 <i class="fas fa-code"></i></a>
                         </div>
                     </div>
 
                 </div>
-
-                <!--     <div class="desc">
-                        <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here
-                            only!</p>
-                        
-                    </div>
-                </div> -->
             </div>
         </div>
-    </section>
-
-    <section class="work" id="work">
-        <!-- <h2 class="heading"><i class="fas fa-laptop-code"></i><span> Projects</span> Made </h2> -->
         <div class="box-container">
             <!-- 1st card project -->
-            <div class="box tilt">
-                <div class="tag">
+            <div class="title">
+                <div class="project-title">
                     <h3>Max Fashion</h3>
                 </div>
                 <div class="img-desc">
                     <img draggable="false" src="./Assets/max fashion.png" alt="" />
 
-                    <div class="bullet-point">
+                    <div class="bullet-point project-description">
                         <h3>Description</h3>
                         <p>&#8226; Cloned Max-Fashion website within 6 days along with 3 aspiring developers.
                         </p>
@@ -188,42 +144,32 @@
                             respective
                             functionalities.</p>
                         <br>
-                        <p>Tech Stack:-
+                        <p class="project-tech-stack">Tech Stack:-
                             <span class="hero_project"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png"
                                     alt="HTML"> <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
                                 <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt=""> <img
                                     src="https://img.icons8.com/color/48/000000/visual-studio.png" alt=""></span>
                         </p>
                         <div class="btns">
-                            <a href="https://maxfashioncopy.netlify.app/" class="btn" target="_blank"><i
+                            <a href="https://maxfashioncopy.netlify.app/" class="btn project-deployed-link" target="_blank"><i
                                     class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/Sadanand012/Max_Fashion" class="btn" target="_blank">Code
+                            <a href="https://github.com/Sadanand012/Max_Fashion" class="btn project-github-link" target="_blank">Code
                                 <i class="fas fa-code"></i></a>
                         </div>
                     </div>
 
                 </div>
-
-                <!--     <div class="desc">
-                        <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here
-                            only!</p>
-                        
-                    </div>
-                </div> -->
             </div>
         </div>
-    </section>
-    <section class="work" id="work">
-        <!-- <h2 class="heading"><i class="fas fa-laptop-code"></i><span> Projects</span> Made </h2> -->
         <div class="box-container">
-            <div class="box tilt">
-                <div class="tag">
+            <div class="title">
+                <div class="project-title">
                     <h3>PluralSight</h3>
                 </div>
                 <div class="img-desc">
                     <img draggable="false" src="./Assets/PluralSight.png" alt="" />
 
-                    <div class="bullet-point">
+                    <div class="bullet-point project-description">
                         <h3>Description</h3>
                         <p>&#8226; Cloned PluralSight website within 6 days along with 5 aspiring developers.
                         </p>
@@ -237,43 +183,32 @@
                             section
                             with respective functionalities.</p>
                         <br>
-                        <p>Tech Stack:-
+                        <p class="project-tech-stack">Tech Stack:-
                             <span class="hero_project"><img src="https://img.icons8.com/color/48/000000/html-5--v1.png"
                                     alt="HTML"> <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS">
                                 <img src="https://img.icons8.com/color/48/000000/javascript--v1.png" alt=""> <img
                                     src="https://img.icons8.com/color/48/000000/visual-studio.png" alt=""></span>
                         </p>
                         <div class="btns">
-                            <a href="https://classy-semolina-ace696.netlify.app/" class="btn" target="_blank"><i
+                            <a href="https://classy-semolina-ace696.netlify.app/" class="btn project-deployed-link" target="_blank"><i
                                     class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/hariohmtripathi/Pluralsight" class="btn" target="_blank">Code
+                            <a href="https://github.com/hariohmtripathi/Pluralsight" class="btn project-github-link" target="_blank">Code
                                 <i class="fas fa-code"></i></a>
                         </div>
                     </div>
 
                 </div>
-
-                <!--     <div class="desc">
-                        <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here
-                            only!</p>
-                        
-                    </div>
-                </div> -->
             </div>
         </div>
-    </section>
-    <section class="work" id="work">
-        <!-- <h2 class="heading"><i class="fas fa-laptop-code"></i><span> Projects</span> Made </h2> -->
         <div class="box-container">
-            <!-- 1st card project -->
-            <div class="box tilt">
-                <div class="tag">
+            <div class="title">
+                <div class="project-title">
                     <h3>KRS</h3>
                 </div>
                 <div class="img-desc">
                     <img draggable="false" style="padding: 5%;" src=".//Assets/kerry allen.png" alt="" />
 
-                    <div class="bullet-point">
+                    <div class="bullet-point project-description">
                         <h3>Description</h3>
                         <p>&#8226; Kakshya Registration System application build for Student Enrollment with course
                             within 5 days.
@@ -283,7 +218,7 @@
                         <p>&#8226; When Student added in System admin can allotted Or Student can add Available course.
                         </p>
                         <br>
-                        <p>Tech Stack:-
+                        <p class="project-tech-stack">Tech Stack:-
                             <span class="hero_project"><img src="https://img.icons8.com/color/48/000000/java.png"
                                     alt="JAVA"> <img src="https://img.icons8.com/color/48/000000/spring-logo.png"
                                     alt="Spring">
@@ -295,37 +230,27 @@
                         </p>
                         <div class="btns">
                             <a href="https://drive.google.com/file/d/1Fr8otvbsD-5TmFQAlthu-ZE2JifGpWh5/view?usp=sharing"
-                                class="btn" target="_blank">Video
+                                class="btn project-deployed-link" target="_blank">Video
                                 <i class="fas fa-eye"></i></a>
-                            <a href="https://github.com/Sadanand012/Kakshya-Registration-System" class="btn"
+                            <a href="https://github.com/Sadanand012/Kakshya-Registration-System" class="btn project-github-link"
                                 target="_blank">Code
                                 <i class="fas fa-code"></i></a>
                         </div>
                     </div>
 
                 </div>
-
-                <!--     <div class="desc">
-                        <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here
-                            only!</p>
-                        
-                    </div>
-                </div> -->
             </div>
         </div>
-    </section>
-    <section class="work" id="work">
-        <!-- <h2 class="heading"><i class="fas fa-laptop-code"></i><span> Projects</span> Made </h2> -->
         <div class="box-container">
             <!-- 1st card project -->
-            <div class="box tilt">
-                <div class="tag">
+            <div class="title">
+                <div class="project-title">
                     <h3>Online Shopping</h3>
                 </div>
                 <div class="img-desc">
                     <img draggable="false" style="margin: 5%;" src=".//Assets/Bada Bazar.png" alt="" />
 
-                    <div class="bullet-point">
+                    <div class="bullet-point project-description">
                         <h3>Description</h3>
                         <p>&#8226; Online_Shopping_Application created within 6 days along with 5 aspiring developers.
                         </p>
@@ -335,7 +260,7 @@
                         <p>&#8226; We named as Bada Bazar in this application We added features like update, Login,
                             logout, Admin and Product</p>
                         <br>
-                        <p>Tech Stack:-
+                        <p class="project-tech-stack">Tech Stack:-
                             <span class="hero_project"><img src="https://img.icons8.com/color/48/000000/java.png"
                                     alt="JAVA"> <img src="https://img.icons8.com/color/48/000000/spring-logo.png"
                                     alt="Spring">
@@ -346,52 +271,79 @@
                             </span>
                         </p>
                         <div class="btns">
-                            <a href="https://drive.google.com/file/d/1tlkGLh78GO5s1Z92hPn4n7V2SOAUvosT/view" class="btn"
+                            <a href="https://drive.google.com/file/d/1tlkGLh78GO5s1Z92hPn4n7V2SOAUvosT/view" class="btn project-deployed-link"
                                 target="_blank">Video
                                 <i class="fas fa-eye"></i></a>
-                            <a href="https://github.com/sanuatmasai/Online_Shopping_Application" class="btn"
+                            <a href="https://github.com/sanuatmasai/Online_Shopping_Application" class="btn project-github-link"
                                 target="_blank">Code
                                 <i class="fas fa-code"></i></a>
                         </div>
                     </div>
 
                 </div>
+            </div>
+        </div>
+        <div class="box-container">
+            <!-- 1st card project -->
+            <div class="title">
+                <div class="project-title">
+                    <h3>Green Basket</h3>
+                </div>
+                <div class="img-desc">
+                    <img draggable="false" style="margin: 5%;" src=".//Assets/Bada Bazar.png" alt="" />
 
-                <!--     <div class="desc">
-                        <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here
-                            only!</p>
-                        
+                    <div class="bullet-point project-description">
+                        <h3>Description</h3>
+                        <p>&#8226; Online_Shopping_Application created within 6 days along with 5 aspiring developers.
+                        </p>
+                        <p>&#8226; In this application We Use as small shopping application. Customer and Admin can add
+                            details and Product.
+                        </p>
+                        <p>&#8226; We named as Bada Bazar in this application We added features like update, Login,
+                            logout, Admin and Product</p>
+                        <br>
+                        <p class="project-tech-stack">Tech Stack:-
+                            <span class="hero_project"><img src="https://img.icons8.com/color/48/000000/java.png"
+                                    alt="JAVA"> <img src="https://img.icons8.com/color/48/000000/spring-logo.png"
+                                    alt="Spring">
+                                <img style="padding: 3px;" src="https://img.icons8.com/fluency/48/000000/mysql-logo.png"
+                                    alt="MySql">
+                                <img style="padding: 3px;" src="https://img.icons8.com/fluency/48/000000/hibernate.png"
+                                    alt="MySql">
+                            </span>
+                        </p>
+                        <div class="btns">
+                            <a href="https://drive.google.com/file/d/1tlkGLh78GO5s1Z92hPn4n7V2SOAUvosT/view" class="btn project-deployed-link"
+                                target="_blank">Video
+                                <i class="fas fa-eye"></i></a>
+                            <a href="https://github.com/sanuatmasai/Online_Shopping_Application" class="btn project-github-link"
+                                target="_blank">Code
+                                <i class="fas fa-code"></i></a>
+                        </div>
                     </div>
-                </div> -->
+
+                </div>
             </div>
         </div>
     </section>
     <!-- skills section starts -->
-    <section class="skills" id="skills">
+    <section class="skills-card" id="skills">
 
         <h2 class="heading"> My <span>Technical</span> Skills & Tools</h2>
 
         <div class="container_skill">
-            <div class="row" id="skillsContainer">
-
-                <!-- <div class="bar">
-                        <div class="info">
-                            <img src="https://img.icons8.com/color/48/000000/adobe-xd.png" />
-                            <span>AdobeXD</span>
-                        </div>
-                    </div> -->
-
+            <div class="row  skills-card-img skills-card-name" id="skillsContainer">
             </div>
         </div>
     </section>
     <!-- skills section ends -->
     <!-- static section starts -->
-    <section class="stat" id="stat">
+    <section class="project-tech-stack" id="stat">
 
         <h2 class="heading"><span>Statistics </span></h2>
         <!-- Github and Statitics Section start -->
 
-        <div class="github_stat">
+        <div class="project-github-link">
 
             <img  src="https://github-readme-stats.vercel.app/api?username=Sadanand012&show_icons=true&theme=default" />
             <img style="margin: 6px;" src="https://github-readme-streak-stats.herokuapp.com/?user=Sadanand012&theme=default" />
@@ -401,10 +353,10 @@
 
         <!-- github calender  -->
 
-        <h2 class="heading github_cal">GitHub Calendar </h2>
-        <div style="width:85%;margin:auto;padding: 10px;" class="calendar">
+        <h2 class="github_cal">GitHub Calendar </h2>
+        <div class="github_cal_style">
 
-            <img style="width:100%;margin:auto;padding: 10px;" id="github-contributions"
+            <img class="github_cal_style" id="github-contributions"
                 src="https://ghchart.rshah.org/Sadanand012" href="https://github.com/Sadanand012" alt="Github chart" />
         </div>
         <!-- calender end  -->
@@ -413,11 +365,7 @@
     <!-- calender end  -->
     <!-- Github and Statitics Section End -->
     <!-- static section end -->
-
-    <!-- contact section starts -->
-
-
-    <!-- footer section starts -->
+<!-- footer section starts -->
     <footer class="footer" id="contact">
 
         <div class="box-container_footer">
@@ -436,22 +384,22 @@
                 <!-- https://drive.google.com/file/d/1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh&export=download 
                 href="path_to_file" download="proposed_file_name"
                 -->
-                <a href="https://drive.google.com/uc?export=download&id=1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh"
+                <a id="resume-link-1" href="https://drive.google.com/uc?export=download&id=1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh"
                     target="_blank"><i class="fas fa-chevron-circle-right"></i> resume</a>
             </div>
 
             <div class="box_footer">
                 <h3>contact info</h3>
-                <p> <i class="fas fa-phone"></i>+91 8408815260</p>
-                <p> <i class="fas fa-envelope"></i>sadanandmare8408@gmail.com</p>
+                <p> <i id="contact-phone" class="fas fa-phone"></i>+91 8408815260</p>
+                <p> <i id="contact-email" class="fas fa-envelope"></i>sadanandmare8408@gmail.com</p>
                 <p> <i class="fas fa-map-marked-alt"></i>Pune,Maharashtra, India</p>
                 <div class="share">
 
-                    <a href="https://www.linkedin.com/in/sadanand-mare-a8396a223" class="fab fa-linkedin"
+                    <a id="contact-linkedin" href="https://www.linkedin.com/in/sadanand-mare-a8396a223" class="fab fa-linkedin"
                         aria-label="LinkedIn" target="_blank"></a>
-                    <a href="https://github.com/Sadanand012" class="fab fa-github" aria-label="GitHub"
+                    <a id="contact-github" href="https://github.com/Sadanand012" class="fab fa-github " id="contact-github"aria-label="GitHub"
                         target="_blank"></a>
-                    <a href="mailto:sadanandmare8408@gmail.com" class="fas fa-envelope" aria-label="Mail"
+                    <a id="contact-email" href="mailto:sadanandmare8408@gmail.com" class="fas fa-envelope" aria-label="Mail"
                         target="_blank"></a>
                 </div>
             </div>
@@ -467,5 +415,4 @@
 
 </html>
 <script src="./js/script.js"></script>
-
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>

@@ -32,12 +32,12 @@ fetchData().then(data => {
   showSkills(data);
 });
 
-document.getElementById("resume1").onclick = function() {newWindowResum()};
+document.getElementById("resume-button-1").onclick = function() {newWindowResum()};
 
 function newWindowResum(){
   window.open("https://drive.google.com/file/d/1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh/view");
 }
-document.getElementById("resume2").onclick = function() {newWindowResum()};
+document.getElementById("resume-link-1").onclick = function() {newWindowResum()};
 
 function newWindowResum(){
   window.open("https://drive.google.com/file/d/1rhRaGS7Vkb3qgADXcgosa_y9S5f4eOKh/view");
