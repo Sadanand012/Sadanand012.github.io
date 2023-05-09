@@ -12,7 +12,7 @@
 }
 
 
-header .logo {
+.header .logo {
     font-size: 1.5rem;
     font-weight: 800;
     text-decoration: none;
@@ -24,7 +24,7 @@ header .logo {
     background-color: white;
 }
 /* navbar starts */
-header {
+.header {
     font-family: "Nunito";
     position: fixed;
     top: 0;
@@ -40,11 +40,11 @@ header {
     width: 100%;
 }
 
-header .logo:hover {
+.header .logo:hover {
     color: #fc8c05;
 }
 
-header .navbar ul {
+.header .navbar ul {
     list-style: none;
     width: auto;
     display: flex;
@@ -52,11 +52,11 @@ header .navbar ul {
     justify-content: space-around;
 }
 
-header .navbar li {
+.header .navbar li {
     margin-left: 2rem;
 }
 
-header .navbar ul li a {
+.header .navbar ul li a {
     font-size: 1.2rem;
     color: #0e2431;
     list-style: none; 
@@ -75,7 +75,7 @@ header .navbar ul li a {
     color: #ee6c4d;
 }
 
-header .navbar ul li a:hover {
+.header .navbar ul li a:hover {
     color: #fc8c05;
     border-bottom: 0.2rem solid #fc8c05;
     padding: 0.5rem 0;
@@ -124,12 +124,12 @@ header .navbar ul li a:hover {
     width: 100%;
     text-decoration: none;
     color: #002057;
-    padding: 30px;
+    padding: 0 0 0 30px;
     margin-bottom: 10px;
 }
 
 @media only screen and (max-width:900px) {
-    header {
+    .header {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -139,7 +139,7 @@ header .navbar ul li a:hover {
     .about .heading{
         margin-top: 100px;
     }
-    header .navbar {
+    .header .navbar {
         display: none;
         
     }
@@ -287,7 +287,7 @@ header .navbar ul li a:hover {
     }
 }
 @media (max-width: 768px) {
-    header .navbar.nav-toggle {
+    .header .navbar.nav-toggle {
         right: 0;
     }
     .about .row {
@@ -362,7 +362,7 @@ header .navbar ul li a:hover {
     height: 50px;
     display: flex;
 }
-.project-card {
+.project-card1 {
     font-family: "Nunito";
     background: #e5ecfb;
     width: 100%;
@@ -370,17 +370,17 @@ header .navbar ul li a:hover {
     padding: 2rem 9%;
 }
 
-.project-card h2 {
+.project-card1 h2 {
     color: #fff;
     color: #002057;
     padding: 1rem;
 }
 
-.project-card .heading span {
+.project-card1 .heading span {
     color: #ee6c4d;
 }
 
-.project-card .box-container {
+.project-card1 .box-container {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -388,7 +388,7 @@ header .navbar ul li a:hover {
     height: 100%;
 }
 
-.project-card .title {
+.project-card1 .title {
     flex: 1 1 45rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 2, 68, 0.8);
@@ -546,8 +546,8 @@ header .navbar ul li a:hover {
     background: #f7f7f7;
     border-radius: 1rem;
     padding: 2rem;
-    width: 90%;
-    margin: auto;
+    /* width: 90%;
+    margin: auto; */
     margin-top: 2rem;
 }
 
@@ -556,7 +556,7 @@ header .navbar ul li a:hover {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     flex-wrap: wrap;
-    gap: 1.8rem;
+    gap: 1rem;
 }
 
 .skills-card .container_skill .bar {
@@ -599,7 +599,9 @@ header .navbar ul li a:hover {
         width: 80%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        padding: -30px;
+    }
+    .skills-card .container_skill .bar {
+        padding: 0px;
     }
     .img-desc {
         display: grid;
@@ -613,7 +615,7 @@ header .navbar ul li a:hover {
         padding: 2rem 0.2rem 2rem 0.2rem;
         gap: 1rem;
     }
-
+    
     .skills-card .container_skill {
         margin-top: 5px;
         width: 100%;
