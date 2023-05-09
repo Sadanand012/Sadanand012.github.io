@@ -546,8 +546,8 @@
     background: #f7f7f7;
     border-radius: 1rem;
     padding: 2rem;
-    /* width: 90%;
-    margin: auto; */
+    width: 90%;
+    margin: auto;
     margin-top: 2rem;
 }
 
@@ -556,7 +556,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.8rem;
 }
 
 .skills-card .container_skill .bar {
@@ -599,9 +599,7 @@
         width: 80%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }
-    .skills-card .container_skill .bar {
-        padding: 0px;
+        padding: -30px;
     }
     .img-desc {
         display: grid;
@@ -615,7 +613,7 @@
         padding: 2rem 0.2rem 2rem 0.2rem;
         gap: 1rem;
     }
-    
+
     .skills-card .container_skill {
         margin-top: 5px;
         width: 100%;
