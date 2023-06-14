@@ -45,6 +45,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    #container-navbar {
+        max-width: 768px;
+    }
     .menu-list {
         display: none;
     }
@@ -732,4 +735,12 @@ p {
 
 .credit a {
     color: #ee6c4d;
+}
+
+#nav-menu, #home, #about, #skills, #tech-stacks, #projects, #contact{
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
 }
