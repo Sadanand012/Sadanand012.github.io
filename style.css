@@ -192,7 +192,7 @@ body {
     background-image: url(/images/cool-background.png);
     padding: 100px 0;
     text-align: center;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
 }
