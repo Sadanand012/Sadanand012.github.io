@@ -8,11 +8,6 @@ body {
     font-family: "Nunito";
 }
 
-#favicon {
-    width: 10px;
-    background-color: white;
-}
-
 .navbar {
     background-color: #ffffff;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
@@ -45,29 +40,22 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    #container-navbar {
-        max-width: 768px;
-    }
     .menu-list {
         display: none;
     }
-
     .hamburger {
         display: block;
     }
-
     #menu-list.show {
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: flex-start;
     }
-
     .navbar {
         height: auto;
         border-radius: 0%;
     }
-
     li {
         padding: 10px;
     }
@@ -174,11 +162,9 @@ body {
     .logo {
         font-size: 24px;
     }
-
     #menu-list {
         display: none;
     }
-
     .menu-btn.logo {
         display: block;
     }
@@ -192,7 +178,7 @@ body {
     background-image: url(/images/cool-background.png);
     padding: 100px 0;
     text-align: center;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -210,7 +196,6 @@ body {
 .text-1 {
     font-size: 24px;
     font-weight: 500;
-    font-style: italic;
     color: white;
     margin-bottom: 20px;
 }
@@ -240,7 +225,6 @@ body {
     from {
         width: 0;
     }
-
     to {
         width: 100%;
     }
@@ -301,7 +285,6 @@ body {
         margin-bottom: 15px;
         box-shadow: none;
     }
-
     #about {
         width: 90%;
         margin: auto;
@@ -314,7 +297,6 @@ body {
         display: flex;
         align-items: center;
     }
-
     .home1 {
         height: 40vh;
     }
@@ -329,11 +311,9 @@ body {
         margin-bottom: 15px;
         box-shadow: none;
     }
-
     .home1 {
         height: 50vh;
     }
-
     #about {
         width: 90%;
         margin: auto;
@@ -368,7 +348,6 @@ body {
     from {
         width: 0;
     }
-
     to {
         width: 100%;
     }
@@ -690,17 +669,22 @@ p {
     margin: auto;
     display: flex;
 }
-
-@media all and (min-width :280) and (max-width :450) {
-    .project-card .imagepro {
-        width: 60%;
-    }
-}
-
-.material-symbols-outlined #contact-github #contact-phone .sub-title {
+.material-symbols-outlined #contact-github #contact-phone .sub-title{
     text-decoration: none;
 }
 
+.credit {
+    padding: 10px 0 0 0;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-size: small;
+    font-weight: 600;
+    border-top: 0.1rem solid #fff3;
+}
+
+.credit a {
+    color: #ee6c4d;
+}
 .icons {
     display: block;
     text-decoration: none;
@@ -716,31 +700,4 @@ p {
 .icons .row .info {
     text-decoration: none;
     margin-left: 10px;
-}
-@media all and (min-width :280) and (max-width :450) {
-    .column {
-        width: 100%;
-        padding: 0px;
-    }
-    
-}
-.credit {
-    padding: 10px 0 0 0;
-    text-align: center;
-    font-family: "Nunito", sans-serif;
-    font-size: small;
-    font-weight: 600;
-    border-top: 0.1rem solid #fff3;
-}
-
-.credit a {
-    color: #ee6c4d;
-}
-
-#nav-menu, #home, #about, #skills, #tech-stacks, #projects, #contact{
-    display: block;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    justify-content: center;
 }
