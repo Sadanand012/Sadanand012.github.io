@@ -129,6 +129,7 @@ body {
 }
 
 .tech-stacks {
+    width: 100%;
     font-weight: 800;
     font-size: 20px;
     color: #333;
@@ -178,7 +179,7 @@ body {
     background-image: url(/images/cool-background.png);
     padding: 100px 0;
     text-align: center;
-    height: 100vh;
+    height: 75vh;
     display: flex;
     align-items: center;
 }
@@ -241,7 +242,7 @@ body {
     background-color: #fff;
     color: #333;
     text-align: center;
-    height: 80vh;
+    height: 75vh;
     display: flex;
     align-items: center;
 }
@@ -487,16 +488,21 @@ p {
     width: 60%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     #container-skill {
         grid-template-columns: repeat(2, 1fr);
         width: 90%;
     }
 }
-
+@media (max-width: 400px) {
+    #container-skill {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+}
 .skills-content div {
     margin: 20px;
     text-align: center;
