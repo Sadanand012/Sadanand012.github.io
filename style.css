@@ -498,9 +498,44 @@ p {
     }
 }
 @media (max-width: 400px) {
+    .home1, .about, .services, .skills, .project, .contact, .contact-content {
+        width: 100%;
+    }
+    .contact-content{
+        font-size: 15px;
+    }
+    #about {
+        width: 100%;
+    }
     #container-skill {
         grid-template-columns: repeat(1, 1fr);
         width: 90%;
+    }
+}
+@media (max-width: 320px) {
+    .text-1 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .text-2 {
+        font-size: 24px;
+    }
+    .text-3 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .typing {
+        color: #361702;
+        animation: typing 2s infinite;
+    }
+    #about .title, .services .title, .skills .title, .project .title, .contact .title {
+        font-size: 25px;
+    }
+    .contact h2 {
+        margin-bottom: 20px;
+    }
+    .contact-content{
+        font-size: 12px;
     }
 }
 .skills-content div {
