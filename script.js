@@ -8,8 +8,6 @@ const hamburger = document.getElementById("hamburger");
 const menulist = document.getElementById("menu-list");
 
 hamburger.addEventListener('click', () => {
-
-
     menulist.classList.toggle('show');
 });
 // document.addEventListener("keydown", function (event){
